@@ -115,12 +115,13 @@ namespace AsyncAwaitApp
 
             Console.WriteLine(array3D[0, 1, 4]); // 0
 
-            for (var i = 0; i < array3D.Length; i++)
+            for (var i = 0; i < array3D.GetLength(0); i++)
             {
                 for (var j = 0; j < array3D.GetLength(1); j++)
                 {
                     for (var k = 0; k < array3D.GetLength(2); k++)
                     {
+                        Console.WriteLine(array3D[k, j, i]); // not correct, just testing. i'll update it once i get it
                     }
                 }
             }
